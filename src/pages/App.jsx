@@ -8,11 +8,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <header>
-                    <Logo/>
-                </header>
                 <article>{this.props.children}</article>
-                <footer>&copy; 2016 StarJS App</footer>
             </div>
         );
     }

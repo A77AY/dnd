@@ -12,6 +12,14 @@ export default class Template extends React.Component {
             <html>
             <head>
                 <title>{this.props.title}</title>
+                <style>{
+                    `.hide {
+                        display: none;
+                    }
+                    .base:hover .hide {
+                        display: block;
+                    }`
+                }</style>
             </head>
             <body style={{
                 padding: 0,
